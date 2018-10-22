@@ -4,6 +4,5 @@ node_modules/
 # Yarn Integrity file
 .yarn-integrity
 
-assets/
 docs/.vuepress/dist
-*.html
+*.log
