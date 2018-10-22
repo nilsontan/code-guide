@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Git | Code Guide</title>
+    <meta name="description" content="For people who tend to forget command lines and need cheat sheets. Look no further!">
+    <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">
+    
+    <link rel="preload" href="/code-guide/assets/css/styles.83c32186.css" as="style"><link rel="preload" href="/code-guide/assets/js/app.83c32186.js" as="script"><link rel="preload" href="/code-guide/assets/js/5.d314e736.js" as="script"><link rel="prefetch" href="/code-guide/assets/css/1.styles.e8e476cd.css"><link rel="prefetch" href="/code-guide/assets/css/2.styles.a2bd3099.css"><link rel="prefetch" href="/code-guide/assets/js/1.e8e476cd.js"><link rel="prefetch" href="/code-guide/assets/js/2.a2bd3099.js"><link rel="prefetch" href="/code-guide/assets/js/3.114c60c1.js"><link rel="prefetch" href="/code-guide/assets/js/4.74f44dea.js"><link rel="prefetch" href="/code-guide/assets/js/6.55520b58.js"><link rel="prefetch" href="/code-guide/assets/js/7.ff109dc9.js"><link rel="prefetch" href="/code-guide/assets/js/8.c3a2e44c.js">
+    <link rel="stylesheet" href="/code-guide/assets/css/1.styles.e8e476cd.css"><link rel="stylesheet" href="/code-guide/assets/css/2.styles.a2bd3099.css"><link rel="stylesheet" href="/code-guide/assets/css/styles.83c32186.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/code-guide/" class="home-link router-link-active"><!----> <span class="site-name">Code Guide</span></a> <div class="links" style="max-width:nullpx;"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/code-guide/commands/" class="nav-link router-link-active">COMMANDS</a></div><div class="nav-item"><a href="/code-guide/ui/" class="nav-link">UI</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/code-guide/commands/" class="nav-link router-link-active">COMMANDS</a></div><div class="nav-item"><a href="/code-guide/ui/" class="nav-link">UI</a></div> <!----></nav>  <ul class="sidebar-links"><li><div class="sidebar-group first collapsable"><p class="sidebar-heading open"><span>Commands</span> <span class="arrow down"></span></p> <ul class="sidebar-group-items"><li><a href="/code-guide/commands/" class="sidebar-link">Npm / Yarn</a></li><li><a href="/code-guide/commands/vue.html" class="sidebar-link">Vue</a></li><li><a href="/code-guide/commands/mongoDB.html" class="sidebar-link">MongoDB</a></li><li><a href="/code-guide/commands/git.html" class="active sidebar-link">Git</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/code-guide/commands/git.html#basic" class="sidebar-link">Basic</a></li><li class="sidebar-sub-header"><a href="/code-guide/commands/git.html#commit" class="sidebar-link">Commit</a></li><li class="sidebar-sub-header"><a href="/code-guide/commands/git.html#remote-repositories" class="sidebar-link">Remote Repositories</a></li><li class="sidebar-sub-header"><a href="/code-guide/commands/git.html#branch" class="sidebar-link">Branch</a></li><li class="sidebar-sub-header"><a href="/code-guide/commands/git.html#tags-2" class="sidebar-link">Tags</a></li><li class="sidebar-sub-header"><a href="/code-guide/commands/git.html#revert" class="sidebar-link">Revert</a></li><li class="sidebar-sub-header"><a href="/code-guide/commands/git.html#search" class="sidebar-link">Search</a></li></ul></li></ul></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>UI</span> <span class="arrow right"></span></p> <!----></div></li></ul> </div> <div class="page"> <div class="content"><h1 id="git"><a href="#git" aria-hidden="true" class="header-anchor">#</a> Git</h1> <h2 id="basic"><a href="#basic" aria-hidden="true" class="header-anchor">#</a> Basic</h2> <div class="language-js extra-class"><pre class="language-js"><code>git init
+</code></pre></div><p>create a new local repository</p> <div class="language-js extra-class"><pre class="language-js"><code>git clone <span class="token operator">&lt;</span>repo<span class="token operator">&gt;</span>
+git clone user@host<span class="token punctuation">:</span><span class="token operator">&lt;</span>repo<span class="token operator">&gt;</span>
+</code></pre></div><p>create a working copy of a repository</p> <h2 id="commit"><a href="#commit" aria-hidden="true" class="header-anchor">#</a> Commit</h2> <div class="language-js extra-class"><pre class="language-js"><code>git add <span class="token operator">&lt;</span>filename<span class="token operator">&gt;</span>
+git add <span class="token punctuation">.</span>
+</code></pre></div><p>add files to staging</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// commit changes to head (but not yet to remote repository)</span>
+git commit <span class="token operator">-</span>m <span class="token string">&quot;message&quot;</span>
+
+<span class="token comment">// commit files added with git add and also any files you have changed since then</span>
+git commit <span class="token operator">-</span>a
+</code></pre></div><p>commit changes</p> <div class="language-js extra-class"><pre class="language-js"><code>git push origin master
+</code></pre></div><p>send changes to the master branch</p> <div class="language-js extra-class"><pre class="language-js"><code>git status
+</code></pre></div><p>list files you've changed and those that are not added or committed</p> <h2 id="remote-repositories"><a href="#remote-repositories" aria-hidden="true" class="header-anchor">#</a> Remote Repositories</h2> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// connect local repository with remote server</span>
+git remote add origin <span class="token operator">&lt;</span>server<span class="token operator">&gt;</span>
+
+<span class="token comment">// list all currently configured remote repositories</span>
+git remote <span class="token operator">-</span>v
+</code></pre></div><p>dealing with remote servers</p> <h2 id="branch"><a href="#branch" aria-hidden="true" class="header-anchor">#</a> Branch</h2> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// create a new branch</span>
+git checkout <span class="token operator">-</span>b <span class="token operator">&lt;</span>branch<span class="token operator">&gt;</span>
+
+<span class="token comment">// switch branches</span>
+git checkout <span class="token operator">&lt;</span>branch<span class="token operator">&gt;</span>
+
+<span class="token comment">// list branches</span>
+git branch
+
+<span class="token comment">// push all branches to remote repository</span>
+git push <span class="token operator">-</span>all origin
+
+<span class="token comment">// delete a branch</span>
+git push origin <span class="token punctuation">:</span><span class="token operator">&lt;</span>branch<span class="token operator">&gt;</span>
+</code></pre></div><p>for branching purposes</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// fetch and merge from remote server</span>
+git pull
+
+<span class="token comment">// merge a branch into your branch</span>
+git merge <span class="token operator">&lt;</span>branch<span class="token operator">&gt;</span>
+
+<span class="token comment">// view conflicts</span>
+git diff
+git diff <span class="token operator">--</span>base <span class="token operator">&lt;</span>file<span class="token operator">&gt;</span>
+git diff <span class="token operator">&lt;</span>sourcebranch<span class="token operator">&gt;</span> <span class="token operator">&lt;</span>targetbranch<span class="token operator">&gt;</span>
+
+<span class="token comment">// after resolving</span>
+git add
+</code></pre></div><p>update from remote repository</p> <h1 id="tags"><a href="#tags" aria-hidden="true" class="header-anchor">#</a> Tags</h1> <h2 id="tags-2"><a href="#tags-2" aria-hidden="true" class="header-anchor">#</a> Tags</h2> <div class="language-js extra-class"><pre class="language-js"><code>git tag <span class="token number">1.0</span><span class="token number">.0</span> <span class="token operator">&lt;</span>commitID<span class="token operator">&gt;</span>
+
+<span class="token comment">// get commitID</span>
+git log
+
+git push <span class="token operator">--</span>tags origin
+</code></pre></div><p>for tagging significant changesets like releases</p> <h2 id="revert"><a href="#revert" aria-hidden="true" class="header-anchor">#</a> Revert</h2> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// replace changes in working tree with the last content in head</span>
+<span class="token comment">// changes added to index as well as new files will be kept</span>
+git checkout <span class="token operator">--</span> <span class="token operator">&lt;</span>filename<span class="token operator">&gt;</span>
+
+<span class="token comment">// drop all local changes and commits, fetch latest history from server</span>
+<span class="token comment">// and point local master branch at it</span>
+git fetch origin
+git reset <span class="token operator">--</span>hard origin<span class="token operator">/</span>master
+</code></pre></div><p>revert changes</p> <h2 id="search"><a href="#search" aria-hidden="true" class="header-anchor">#</a> Search</h2> <div class="language-js extra-class"><pre class="language-js"><code>git grep <span class="token string">&quot;foo()&quot;</span>
+</code></pre></div><p>search the working directory for foo()</p></div> <div class="page-edit"><!----> <!----></div> <div class="page-nav"><p class="inner"><span class="prev">
+        ←
+        <a href="/code-guide/commands/mongoDB.html" class="prev">
+          MongoDB
+        </a></span> <span class="next"><a href="/code-guide/ui/">
+          Markdown
+        </a>
+        →
+      </span></p></div> </div> <!----></div></div>
+    <script src="/code-guide/assets/js/5.d314e736.js" defer></script><script src="/code-guide/assets/js/app.83c32186.js" defer></script>
+  </body>
+</html>
