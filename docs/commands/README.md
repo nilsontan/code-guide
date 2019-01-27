@@ -59,3 +59,12 @@ npm update <pkg>
 yarn upgrade <pkg>
 ```
 update package
+
+```js
+npm install -g npm-check-updates
+ncu -u
+npm update
+```
+to update to a new major version for all the packages, instead install `npm-check-updates` then run it before updating all packages.
+
+> warning: might break the code
