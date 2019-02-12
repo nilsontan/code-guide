@@ -112,6 +112,18 @@ git reset --hard origin/master
 ```
 revert changes
 
+## Gitignore
+```js
+git rm -r --cached filenames
+
+or
+
+git rm -r --cached .
+git add .
+git commit -m "fixing untracked files"
+```
+remove a previously tracked file(s) from git
+
 ## Search
 ```js
 git grep "foo()"
