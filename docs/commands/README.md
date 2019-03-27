@@ -4,63 +4,63 @@ title: Npm / Yarn
 
 # Npm / Yarn
 To install packages in package.json use
-```js
+```bash
 npm install
 yarn install
 ```
 
 ## Install
-```js
+```bash
 npm i -g <pkg...>
 yarn global add <pkg...>
 ```
 install package-name globally
 
-```js
+```bash
 npm i <pkg...> --save
 yarn add <pkg...>
 ```
 install in dependencies
 
-```js
+```bash
 npm i <pkg...> --save-dev
 yarn add <pkg...> -D
 ```
 install in development dependencies
 
-```js
+```bash
 npm i <pkg>@version
 yarn add <pkg>@version
 ```
 install at version
 
-```js
+```bash
 npm uninstall <pkg>
 yarn remove <pkg>
 ```
 uninstall
 
 ## List
-```js
+```bash
 npm ls (-g) (--depth=0)
 yarn list (--depth=0)
 ```
 list packages (globally) (by depth)
 
 ## Update
-```js
+```bash
 npm outdated
 yarn outdated
 ```
 list all outdated packages
 
-```js
+```bash
 npm update <pkg>
 yarn upgrade <pkg>
 ```
 update package
 
-```js
+```bash
 npm install -g npm-check-updates
 ncu -u
 npm update
